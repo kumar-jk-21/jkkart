@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    .add{
+        display: flex;
+        justify-content: center;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+    .numbwe{
+        padding: 0 2rem;
+        border: .5px;
+    }
+   
+    .card{
+        margin: 20px 0px;
+        border: none;
+        box-shadow:5px 5px 20px rgb(163, 162, 162);
+        
+    }
+    .card:hover{
+        box-shadow: 10px 10px 20px #0a0a0a;
+    }
+     #btn{
+        margin: 0 auto 0 auto;
+        width: 120px;
+        height: 40px;
+     display: flex;
+     text-align: center;
+     
+      box-shadow: 5px 5px 20px #8b8474;
+        
+    } 
+    footer{
+        margin-top: 100px;
+        background-color: rgb(31, 31, 95);
+        color: white;
+    }
+    body{
+        background-color: pink;
+    }
+  
+    
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar  navbar-dark bg-primary">
+               <div class="container-fluid">
+        
+                <a href="#" class="navbar-brand"><img src="jk.png" width="50px" height="50px" alt="LOGO">Stationary</a>
+        
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  
+                    <ul class="navbar-nav mx-auto">
+        
+                            <li class="nav-item "><a class="nav-link active" href="">Home</a></li>
+                            <li  class="nav-item"><a class="nav-link" href="">Billing</a></li>
+                            <li  class="nav-item"><a class="nav-link" href="">Contact</a></li>
+                            <li  class="nav-item"><a class="nav-link" href="">Help</a></li>
+        
+                    </ul>
+                    <input placeholder="Search" type="text" class="input text-center rounded"><label for="search"><h5 class="px-3">Search</h5></label>
+                </div>
+        
+               </div>
+              
+            </nav>
+        </header>
+    </div>
+ 
+ <div class="container">
+        
+    <!-- <h1 class="text-center py-4">ALL CATOGRIES</h1> -->
+
+    <div class="row row-col-md-1">
+            <div class="col ">
+                <div class="card" style="width: 200px; height: 400px;" >
+                    <img height="200px"                           src="dairymilk.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4>DAIRY MILK</h4>
+                        <s>$ 150</s>
+                        <p>$ 80</p>
+                        <p>NO.OF.QUANTITY</p>
+                        <div class="add">
+                            <span id="minus">-</span>
+                            <span id="num" class="numbwe">00</span>
+                            <span id="plus">+</span>
+                        </div>
+                        <button class="btn btn-primary" id="buy" >BUY</button>
+                    </div>
+                </div>
+            </div>       
+            <!-- ===========/   2   \============== -->
+
+
+            <div class="col">
+                <div class="card " style="width: 200px; height: 400px;">
+                    <img height="200px" src="5star.jfif" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4>5 STAR</h4>
+                        <s>$ 100</s>
+                        <p>$ 70</p>
+                        <p>NO.OF.QUANTITY</p>
+                        <div class="add">
+                            <span id="sub">-</span>
+                            <span id="dig" class="numbwe">00</span>
+                            <span id="addi">+</span>
+                        </div>
+                        <button class="btn btn-primary" id="buy2" >BUY</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ======/    3   \======== -->
+
+
+            <div class="col">
+                <div class="card " style="width: 200px; height: 400px;">
+                    <img height="200px" src="pen.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4>PEN</h4>
+                        <s>$ 50</s>
+                        <p>$ 20</p>
+                        <p>NO.OF.QUANTITY</p>
+                         <div class="add">
+                            <span id="minus3">-</span>
+                            <span id="num3" class="numbwe">00</span>
+                            <span id="plus3">+</span>
+                        </div>
+                        <button class="btn btn-primary" id="buy3" >BUY</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ===/ 4   \=== -->
+
+
+            <div class="col">
+                <div class="card " style="width: 200px; height: 400px;">
+                    <img height="200px" src="paintbrush.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4>PAINT BRUSH</h3>
+                        <s>$ 60</s>
+                        <p>$ 40</p>
+                        <p>NO.OF.QUANTITY</p>
+                        <div class="add">
+                            <span id="minus4">-</span>
+                            <span id="num4" class="numbwe">00</span>
+                            <span id="plus4">+</span>
+                        </div>
+                        <button class="btn btn-primary" id="buy4" >BUY</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ===/   5   \=== -->
+
+
+            <div class="col">
+                <div class="card " style="width: 200px; height: 400px;">
+                    <img height="200px" src="teady.jfif" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <H4>teaddy</H4>
+                        <s>$ 500</s>
+                        <p>$ 300</p>
+                        <p>NO.OF.QUANTITY</p>
+                        <div class="add">
+                            <span id="minus5">-</span>
+                            <span id="num5" class="numbwe">00</span>
+                            <span id="plus5">+</span>
+                        </div>
+                        <button class="btn btn-primary" id="buy5" >BUY</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ====/   6   \=== -->
+
+
+            <div class="col">
+                <div class="card " style="width: 200px; height: 400px;">
+                    <img height="200px" src="pencil.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4>Color Pencil</h4>
+                        <s>$ 50</s>
+                        <p>$ 25</p>
+                        <p>NO.OF.QUANTITY</p>
+                        <div class="add">
+                            <span id="minus6">-</span>
+                            <span id="num6" class="numbwe">00</span>
+                            <span id="plus6">+</span>
+                        </div>
+                        <button class="btn btn-primary" id="buy6" >BUY</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======/   7   \===== -->
+
+
+            <div class="col">
+                <div class="card " style="width: 200px; height: 400px;">
+                    <img height="200px" src="keyboard.jfif" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4>Key Board</h4>
+                        <s>$ 500</s>
+                        <p>$ 200</p>
+                        <p>NO.OF.QUANTITY</p>
+                        <div class="add">
+                            <span id="sub7">-</span>
+                            <span id="dig7" class="numbwe">00</span>
+                            <span id="addi7">+</span>
+                        </div>
+                        <button class="btn btn-primary" id="buy7" >BUY</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =====/   8   \===== -->
+            <div class="col">
+                <div class="card " style="width: 200px; height: 400px;">
+                    <img height="200px" src="pc.jfif" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4>Monitor</h4>
+                        <s>$ 15000</s>
+                        <p>$ 10000</p>
+                        <p>NO.OF.QUANTITY</p>
+                        <div class="add">
+                            <span id="sub8">-</span>
+                            <span id="dig8" class="numbwe">00</span>
+                            <span id="addi8">+</span>
+                        </div>
+                        <button class="btn btn-primary" id="buy8" >BUY</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ===/   9   \=== -->
+
+            <div class="col">
+                <div class="card " style="width: 200px; height: 400px;">
+                    <img src="cpu.jpg" height="200px" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4>CPU</h4>
+                        <s>$ 20000</s>
+                        <p>$ 15000</p>
+                        <p>NO.OF.QUANTITY</p>
+                        <div class="add">
+                            <span id="sub9">-</span>
+                            <span id="dig9" class="numbwe">00</span>
+                            <span id="addi9">+</span>
+                        </div>
+                        <button class="btn btn-primary" id="buy9" >BUY</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =====/   10   \==== -->
+
+
+            <div class="col">
+                <div class="card " style="width: 200px; height: 400px;">
+                    <img src="mouse.webp" height="200px" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4>5 STAR</h4>
+                        <s>$ 150</s>
+                        <p>$ 100</p>
+                        <p>NO.OF.QUANTITY</p>
+                        <div class="add">
+                            <span id="sub10">-</span>
+                            <span id="dig10" class="numbwe">00</span>
+                            <span id="addi10">+</span>
+                        </div>
+                        <button class="btn btn-primary" id="buy10" >BUY</button>
+                    </div>
+                </div>
+            </div>
+
+            
+    </div>
+</div>
+<a href="receipt.html" class="btn btn-primary mb-5 my-5" onclick="alert('Click Ok To View Your Selected Product Price And Grand Total')" id="btn">View Receipt</a>
+                <!-- /   2   \ -->
+
+                <footer class=" footer rounded mt-5 p-5">
+                    <div class="row">
+                        <div class="col">
+                            <a class="nav-link" href="#"><img src="jk.png" width="50px" height="50px" class="d-inline-block" alt="">2024 JK Kart. 2024 ALL RIGHTS Reserved</a>
+                            
+                        </div>
+                        <div class="col">
+                            <ul class="navbar nav">
+                                <li class="nav-item"><a class="nav-link text-lite" href="#">Terms Of Servise</a></li>
+                                <li class="nav-item"><a class="nav-link text-lite" href="#">Privacy Policy</a></li>
+                                <li class="nav-item"><a class="nav-link text-lite" href="#">Sitemap</a></li>
+                                <li class="nav-item"><a class="nav-link text-lite" href="#">Help</a></li>
+                                <li class="nav-item"><a class="nav-link text-lite" href="#">About</a></li>
+                                <li class="nav-item"><a class="nav-link text-lite" href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+
+
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+ <script src="kumar.js"></script> 
+
+</body>
+</html>
